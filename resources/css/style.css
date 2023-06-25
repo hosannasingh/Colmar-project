@@ -259,7 +259,7 @@ img.screen-3:hover{
     display:none;
 }
 /*responsive-phone-layout*/
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
     html{
         display:block;
         transition: all 100ms linear;
