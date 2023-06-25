@@ -15,7 +15,7 @@ header{
     width:100%;
     height:4.5rem;
     top:0;
-    background-color:rgb(244, 236, 236);
+    background-color:white;
     align-items:center;
     z-index: 1;
 }
@@ -65,7 +65,7 @@ button.screen-1{
     padding:1.4rem;
     margin-top:2rem;
     margin-left:1rem;
-    background-color: rgb(244, 236, 236);
+    background-color: white;
     font-size: 1.4rem;
     border: 1px solid hsla(0, 1%, 15%, 0.3);
     font-weight: 600;
@@ -122,7 +122,7 @@ span.screen-2-section-1{
 }
 div.screen-3{
     width: 25%;
-    background-color: rgb(244, 236, 236);
+    background-color: white;
     margin: 1rem;
     border-radius: 2px;
 }
@@ -176,7 +176,7 @@ h1.screen-4{
 }
 /*footer*/
 footer{
-    background-color: rgb(244, 236, 236);
+    background-color: white;
     border: 1px solid hsla(0, 1%, 15%, 0.3);
     display:flex;
     font-size:0.7rem;
@@ -232,7 +232,7 @@ li:hover{
 button:hover{
     padding:1.6rem;
     height:auto;
-    background-color:white;
+    background-color: hsl(240, 5%, 84%);
 }
 .screen-2-section-2:hover,
 #fisma:hover,
@@ -248,4 +248,145 @@ a:hover{
 }
 img.screen-3:hover{
     width:100%;
+}
+.logo{
+    display:none;
+}
+.mobile{
+    display:none;
+}
+.mobile-2{
+    display:none;
+}
+/*responsive-phone-layout*/
+@media only screen and (max-width:480px){
+    html{
+        display:block;
+        transition: all 100ms linear;
+    }
+    /*header*/
+    li{
+        display:none;
+    }
+    h3.list{
+        display:none;
+    }
+    ul{
+        display:flex;
+        padding-left: 1rem;
+    }
+  .logo{
+    width:2rem;
+    height: 2rem;
+    display: flex;
+    margin: 0 auto;
+ }
+  .logo-colmar{
+    width:2.5rem;
+    margin-left: 1rem;
+ }
+ /*screen-1*/
+ section#screen-1{
+    display: block;
+ }
+ #section-image-1{
+   width:99%;
+   margin:0;
+   border:1px solid transparent;
+ }
+ .screen-1-text{
+  margin-left:1rem;
+ }
+ h1.screen-1{
+    font-size:1.8rem;
+ }
+ p.screen-1{
+    font-size: 1.3rem;
+ }
+ button.screen-1{
+    margin:1rem 1rem 0 1rem;
+    padding: 0.8rem 0;
+    font-size:1.2rem;
+ }
+ /*screen-2*/
+ #screen-2{
+    display:block;
+ }
+ .screen-2-section-1-whole{
+    display:none;
+ }
+ .screen-2-section-2-whole{
+    width:100%;
+ }
+ .screen-2-section-2{
+    display: block;
+    margin:0;
+    padding: 1rem 0;
+    border: none;
+ }
+ .screen-2-section-2-img{
+    display:none;
+ }
+ .mobile{
+    display:block;
+    width:95%;
+    margin:0.5rem auto;
+ }
+ .screen-2-section-2-text{
+    margin-left: 1rem;
+    width: 90%;
+ }/*screen-3*/
+ #screen-3{
+    display: block;
+ }
+ img.screen-3,
+ .screen-3-text{
+    display: none;
+ }
+ .mobile-2{
+    display:block;
+    margin-left:1rem;
+    font-size: 1rem;
+ }
+ div.screen-3{
+    width:90%;
+    height: 3.4rem;
+    margin:1rem auto;
+    padding:0;
+    color: hsla(0, 1%, 15%, 0.6);
+    align-items: center;
+    display:flex;
+ }
+ div.screen-3:hover{
+     width:90%;
+ }
+ .screen-3-heading{
+    font-size: 2rem;
+    margin-top: 0rem;
+ }
+ /*screen-4*/
+ .screen-4{
+    font-size: 1.6rem;
+ }
+ .screen-4-section-1{
+    width:100%;
+    margin: 0;
+ }
+ .screen-4-section-2{
+    display: none;
+ }
+ .screen-4-section-1-t{
+    display: none;
+ }
+ video{
+    width: 100%;
+    margin: 0;
+ }
+ /*footer*/
+ footer span{
+    display: none;
+ }
+ footer{
+    font-size: 0.5rem;
+ }
 }
